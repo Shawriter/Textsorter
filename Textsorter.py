@@ -42,21 +42,15 @@ def main():
             break
         except OSError:
             print("Invalid path, make sure the path is exact. \n")
-            # return main()
-
-    # s = str(path) #Muuttaa sanaksi
-
-    #print (s)
-    #file = open( s, 'r+')
-    #read_data = file.read()
+    
     sorttaaja(file, s)
-    # file.close()
+ 
 
 
 def sorttaaja(x, a):
 
     lista = []
-    #sanat = str(lista)
+    
     for line in x:
         lista.append(line)
         lista.sort()
